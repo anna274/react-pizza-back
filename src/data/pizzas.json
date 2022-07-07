@@ -1,0 +1,50 @@
+[
+  {
+    "id": "40998ec3-3836-43aa-a0eb-44d9ef058597",
+    "name": "Мексиканская",
+    "image": "https://res.cloudinary.com/dmpdbfisy/image/upload/v1656748266/rjnzrdrmdsw5m6z1jvqe.png",
+    "popularity": 4
+  },
+  {
+    "id": "b89387ce-efba-4a06-b716-40bb0057e15b",
+    "name": "Карбонара",
+    "image": "https://res.cloudinary.com/dmpdbfisy/image/upload/v1656748266/lbs6hdj79ycxzq7qb9fu.png",
+    "popularity": 8
+  },
+  {
+    "id": "fc169321-941f-4ff3-ace8-7ab0df9943e8",
+    "name": "5 сыров",
+    "image": "https://res.cloudinary.com/dmpdbfisy/image/upload/v1656748266/dmqqsppzymtwrdhdwvok.png",
+    "popularity": 10
+  },
+  {
+    "id": "dcc4dc00-7ba7-45bb-a393-b4567cb44f60",
+    "name": "Пепперони",
+    "image": "https://res.cloudinary.com/dmpdbfisy/image/upload/v1656748267/g6b5xo9smshgc6ndmorx.png",
+    "popularity": 9
+  },
+  {
+    "id": "4c7f7c2c-a56b-4a21-bc01-62d2ef6f6d87",
+    "name": "Маргарита",
+    "image": "https://res.cloudinary.com/dmpdbfisy/image/upload/v1656748266/q3tnmeyrbqx1ueyaoc4p.png",
+    "popularity": 0
+  },
+  {
+    "id": "c8b29daf-72ae-4228-bc58-3d5182532819",
+    "name": "Барбекю",
+    "image": "https://res.cloudinary.com/dmpdbfisy/image/upload/v1656748266/l3y9mu77rtbbg8rz4hsk.png",
+    "popularity": 6
+  },
+  {
+    "id": "9c8c1f0b-5ba6-46fc-b733-732f9540cfc6",
+    "name": "Овощная",
+    "image": "https://res.cloudinary.com/dmpdbfisy/image/upload/v1656748267/pz0qtz2lkfg0nwbpz5qx.png",
+    "popularity": 0
+  },
+  {
+    "id": "aad94bf3-cc29-462f-9ddd-6d6424ebcdf1",
+    "name": "Креветки с ананасами",
+    "image": "https://res.cloudinary.com/dmpdbfisy/image/upload/v1656748266/gtxxokj7t6n8kekppmdz.png",
+    "popularity": 2
+  }
+]
