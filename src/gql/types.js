@@ -24,9 +24,20 @@ const typeDefs = gql`
     maxAmount: Int
   }
 
+  type PizzaType {
+    id: ID
+    name: String
+    pizzaIds: [String]
+  }
+
+  input PizzaFilter {
+    id: ID
+  }
+
   type Query {
-    pizzas: [Pizza]
+    pizzas(pizzaFilter: PizzaFilter): [Pizza]
     pizza_availability: [Pizza_Availability]
+    pizza_types: [PizzaType]
   }
 
   type OrderedPizza {

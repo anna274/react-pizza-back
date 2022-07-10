@@ -5,13 +5,25 @@ const pizzas = require('../data/pizzas.json');
 const pizza_modifications = require('../data/pizza_modifications.json');
 const orders = require('../data/orders.json');
 const pizza_availability = require('../data/pizza_availability.json');
+const pizza_types = require('../data/pizza_types.json');
 
 const pubsub = new PubSub();
 
 const resolvers = {
   Query: {
-    pizzas: () => pizzas,
+    pizzas: (_, args) => {
+      console.log('args', args);
+      const { pizzaFilter: { id: filterId } = {} } = args;
+      if (!filterId) {
+        return pizzas;
+      }
+      return pizzas.filter(({ id: pizzaId }) => {
+        const type = pizza_types.find(({ id }) => id === filterId);
+        return type.pizzasIds.includes(pizzaId);
+      });
+    },
     pizza_availability: () => pizza_availability,
+    pizza_types: () => pizza_types,
   },
 
   Mutation: {

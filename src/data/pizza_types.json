@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "pizzasIds": [
+      "b89387ce-efba-4a06-b716-40bb0057e15b",
+      "dcc4dc00-7ba7-45bb-a393-b4567cb44f60",
+      "c8b29daf-72ae-4228-bc58-3d5182532819"
+    ],
+    "name": "Мясные"
+  },
+  {
+    "id": "2",
+    "pizzasIds": [
+      "9c8c1f0b-5ba6-46fc-b733-732f9540cfc6",
+      "fc169321-941f-4ff3-ace8-7ab0df9943e8",
+      "aad94bf3-cc29-462f-9ddd-6d6424ebcdf1"
+    ],
+    "name": "Вегатарианские"
+  },
+  {
+    "id": "3",
+    "pizzasIds": ["c8b29daf-72ae-4228-bc58-3d5182532819"],
+    "name": "Гриль"
+  },
+  {
+    "id": "4",
+    "pizzasIds": ["dcc4dc00-7ba7-45bb-a393-b4567cb44f60"],
+    "name": "Острые"
+  },
+  {
+    "id": "5",
+    "pizzasIds": [],
+    "name": "Закрытые"
+  }
+]
