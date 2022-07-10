@@ -30,12 +30,17 @@ const typeDefs = gql`
     pizzaIds: [String]
   }
 
-  input PizzaFilter {
-    id: ID
+  type PageInfo {
+    hasNextPage: Boolean
+  }
+
+  type PizzaConnection {
+    edges: [Pizza]
+    pageInfo: PageInfo
   }
 
   type Query {
-    pizzas(pizzaFilter: PizzaFilter): [Pizza]
+    pizzas(limit: Int, offset: Int, pizzaTypeId: ID): PizzaConnection
     pizza_availability: [Pizza_Availability]
     pizza_types: [PizzaType]
   }

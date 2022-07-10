@@ -12,15 +12,21 @@ const pubsub = new PubSub();
 const resolvers = {
   Query: {
     pizzas: (_, args) => {
-      console.log('args', args);
-      const { pizzaFilter: { id: filterId } = {} } = args;
-      if (!filterId) {
-        return pizzas;
+      const { limit, offset, pizzaTypeId } = args;
+      let filteredPizzas = pizzas;
+      if (pizzaTypeId) {
+        filteredPizzas = pizzas.filter(({ id: pizzaId }) => {
+          const type = pizza_types.find(({ id }) => id === pizzaTypeId);
+          return type.pizzasIds.includes(pizzaId);
+        });
       }
-      return pizzas.filter(({ id: pizzaId }) => {
-        const type = pizza_types.find(({ id }) => id === filterId);
-        return type.pizzasIds.includes(pizzaId);
-      });
+      const edges = filteredPizzas.slice(offset).slice(0, limit);
+      return {
+        edges,
+        pageInfo: {
+          hasNextPage: filteredPizzas.length > offset + limit,
+        },
+      };
     },
     pizza_availability: () => pizza_availability,
     pizza_types: () => pizza_types,
